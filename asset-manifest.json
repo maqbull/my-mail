@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/my-mail/static/css/main.29a3b29c.chunk.css",
+    "main.js": "/my-mail/static/js/main.527b4ee3.chunk.js",
+    "main.js.map": "/my-mail/static/js/main.527b4ee3.chunk.js.map",
+    "runtime-main.js": "/my-mail/static/js/runtime-main.3a7d5dcd.js",
+    "runtime-main.js.map": "/my-mail/static/js/runtime-main.3a7d5dcd.js.map",
+    "static/js/2.f64f4d66.chunk.js": "/my-mail/static/js/2.f64f4d66.chunk.js",
+    "static/js/2.f64f4d66.chunk.js.map": "/my-mail/static/js/2.f64f4d66.chunk.js.map",
+    "index.html": "/my-mail/index.html",
+    "static/css/main.29a3b29c.chunk.css.map": "/my-mail/static/css/main.29a3b29c.chunk.css.map",
+    "static/js/2.f64f4d66.chunk.js.LICENSE.txt": "/my-mail/static/js/2.f64f4d66.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a7d5dcd.js",
+    "static/js/2.f64f4d66.chunk.js",
+    "static/css/main.29a3b29c.chunk.css",
+    "static/js/main.527b4ee3.chunk.js"
+  ]
+}
