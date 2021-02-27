@@ -1,13 +1,170 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+body{
+  font-family: Arial;
+}
+#root {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Header {
+  order: 1;
+  margin: 10px;
+  flex: 1 1 30vw;
+  display: flex;
+}
+.notification-wrapper {
+  order: 2;
+  border: 2px solid #141418;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+  height: 10vh;
+  margin: 18px;
+  overflow-y: auto;
+}
+
+main {
+  order: 3;
+  border-top: 2px solid rgb(36, 19, 189); 
+  display: flex;
+  flex: 1 1 100vw;
+  margin: 10px 10px;
+}
+
+/* Styling inside component  */
+
+/* Header  */
+
+h2 {
+  padding: 20px;
+}
+
+.UserMenu {
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+}
+.UserMenu > img {
+  border-radius: 50%;
+  height: 8vh;
+  cursor: pointer;
+  margin-left: 150px;
+  margin-top: 8px;
+}
+.UserMenu ul li {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 150px;
+  padding: 7px;
+  cursor: pointer;
+  background-color: blue;
+  color: rgb(241, 241, 239);
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.notification {
+  border: 2px solid whitesmoke;
+  padding: 10px;
+}
+.notification > span {
+    font-size: 20px;
+    padding: 10px;
+}
+.close {
+  background-color: white;
+  width: 10px;
+  border-radius: 50%;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+.MessageList {
+  display: flex;
+  flex-direction: column;
+}
+.no-messages {
+  color: red;
+  font-size: 50px;
+}
+.loading {
+  font-size: 50px;
+}
+.messages {
+  width: 90vw;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.subject {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 2px solid wheat;
+  cursor: pointer;
+}
+.preview {
+  font-size: 20px;
+  padding: 10px;
+}
+ .MessageViewer div {
+  font-size: 20px;
+  padding: 10px;
+ }
+ .MessageViewer button {
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 7px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: blue;
+  color: rgb(241, 241, 239);
+  width: fit-content;
+  border-radius: 5px;
+ }
+
+/* Login Page Styling  */
+.LoginPage {
+  /* background-color: #141418; */
+  border: 2px solid red;
+}
+
+.LoginPage form {
+ display: flex;
+ flex-direction: column;
+}
+label {
+  font-size: 20px;
+  margin: 10px;
+}
+input {
+  font-size: 20px;
+  width: 150px;
+  border-bottom: 2px solid black;
+  outline: none;
 }

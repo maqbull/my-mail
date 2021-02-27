@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import LoginPage from './LoginPage';
+import MainPage from './MainPage';
+import { useUser } from './UserContext'
+import Providers from './Providers'
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+function Root() {
+  const user = useUser();
+  return user ? <MainPage /> : <LoginPage />
+}
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Providers> <Root /> </Providers>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
